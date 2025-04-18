@@ -1,10 +1,8 @@
 package com.edsoft.eBlog.controller;
 
-import com.edsoft.eBlog.model.Blog;
 
-import com.edsoft.eBlog.repository.BlogRepository;
+import com.edsoft.eBlog.model.Blog;
 import com.edsoft.eBlog.service.BlogService;
-import lombok.AllArgsConstructor;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +13,6 @@ import java.util.List;
 @RequestMapping("/blogs")
 @EnableAutoConfiguration
 @CrossOrigin
-@AllArgsConstructor
 public class BlogController {
 
     private final BlogService blogService;
